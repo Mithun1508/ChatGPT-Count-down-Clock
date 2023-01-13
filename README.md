@@ -1,6 +1,6 @@
 # build a simple yet useful web app — a countdown clock that a user can interact with. Here's the kicker: we'll only use chatGPT + Replit.
 
-# We’ll be using two tools to build this app. I recommend you follow along.
+ We’ll be using two tools to build this app. I recommend you follow along.
 
 1) ChatGPT (that’s why you’re here).
 
