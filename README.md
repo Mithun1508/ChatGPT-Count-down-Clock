@@ -52,4 +52,6 @@ Have decided to change tactics and asked for the css code directly.
 
 It fixed the problem immediately and even told me how to reference the styling file in my html code!
 
+# Site is Live Now Do check it out :  https://spectacular-naiad-f03cbd.netlify.app/ 
+
 
