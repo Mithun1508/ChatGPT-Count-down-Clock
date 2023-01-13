@@ -57,3 +57,8 @@ It fixed the problem immediately and even told me how to reference the styling f
 https://spectacular-naiad-f03cbd.netlify.app/ 
 
 
+
+![Screenshot (20)](https://user-images.githubusercontent.com/93249038/212231152-e4464d76-f803-4141-bdd5-b006f8903c65.png)
+
+![Screenshot (21)](https://user-images.githubusercontent.com/93249038/212231171-0857abbd-ef67-42b5-b9b0-0d6dc5502f9a.png)
+
