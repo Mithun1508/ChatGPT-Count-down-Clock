@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+  color: white;
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+#clockdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+label, input, button {
+  display: inline-block;
+}
+
+#deadline-prompt, #clockdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
+
+@media (max-width: 600px) {
+  #deadline-prompt, #clockdiv {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  #deadline-prompt, #clockdiv {
+    font-size: 18px;
+  }
+}

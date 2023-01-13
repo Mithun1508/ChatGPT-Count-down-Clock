@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Countdown Clock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+  <div id="clockdiv" style="display: none;">
+    <span class="days"></span> days 
+    <span class="hours"></span> hours 
+    <span class="minutes"></span> minutes 
+    <span class="seconds"></span> seconds
+  </div>
+  <br>
+  <div id="user-input">
+  <label for="deadline">Enter a countdown date:</label>
+  <input type="date" id="deadline">
+  <button onclick="setDeadline()">Set Countdown</button>
+  </div>
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+    
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+    
+    function setDeadline() {
+    var deadline = document.getElementById("deadline").value;
+    var clock = document.getElementById("clockdiv");
+    clock.style.display = "block";
+    document.getElementById("user-input").style.display = "none";
+    initializeClock("clockdiv", deadline);
+    }
+    
+  </script>
+</body>
+
+</html>
