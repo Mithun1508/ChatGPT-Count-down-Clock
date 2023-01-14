@@ -55,9 +55,14 @@ Have decided to change tactics and asked for the css code directly.
 
 It fixed the problem immediately and even told me how to reference the styling file in my html code!
 
-# I asked ChatGPT 'Can you generate the html code for a countdown clock'?
+# I asked ChatGPT that 'Can you generate the html code for a countdown clock'?
 
 ![Screenshot (26)](https://user-images.githubusercontent.com/93249038/212460871-71411eb6-f546-4cfc-8d3c-45ee0e263958.png)
+
+
+# FULL HTML GENERATED CODE
+
+
 <!DOCTYPE html>
 <html>
 <head>
