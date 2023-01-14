@@ -6,9 +6,9 @@
 
  Will be using two tools to build this app.
 
-1) # ChatGPT 
+1) ChatGPT 
 
-2) # Replit 
+2) Replit 
 
 There’s an art to how you talk to AI. And there’s some banger notes on how to do this already.
 
