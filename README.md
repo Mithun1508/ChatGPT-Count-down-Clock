@@ -55,6 +55,82 @@ Have decided to change tactics and asked for the css code directly.
 
 It fixed the problem immediately and even told me how to reference the styling file in my html code!
 
+# I asked ChatGPT 'Can you generate the html code for a countdown clock'?
+
+![Screenshot (26)](https://user-images.githubusercontent.com/93249038/212460871-71411eb6-f546-4cfc-8d3c-45ee0e263958.png)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Clock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="clockdiv">
+    <span id="days"></span> days 
+    <span id="hours"></span> hours 
+    <span id="minutes"></span> minutes 
+    <span id="seconds"></span> seconds
+  </div>
+  <br>
+  <div id="user-input">
+  <label for="deadline">Enter a countdown date:</label>
+  <input type="date" id="deadline">
+  <button onclick="setDeadline()">Set Countdown</button>
+  </div>
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+    
+    function initializeClock(endtime) {
+      var daysSpan = document.getElementById("days");
+      var hoursSpan = document.getElementById("hours");
+      var minutesSpan = document.getElementById("minutes");
+      var secondsSpan = document.getElementById("seconds");
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+    
+    function setDeadline() {
+    var deadline = document.getElementById("deadline").value;
+    document.getElementById("clockdiv").style.display = "block";
+    document.getElementById("user-input").style.display = "none";
+    initializeClock(deadline);
+    }
+    
+  </script>
+</body>
+</html>
+
+
+This code creates a countdown clock that displays the remaining time in days, hours, minutes, and seconds. The user can enter a date as a deadline using an input field and when the user clicks the "Set Countdown" button, the clock is displayed and begins counting down to the deadline that was entered. The code uses JavaScript to calculate the time remaining until the deadline and update the clock display. You can also style the clock using CSS in a separate
+
+
 # Site is Live Now Do check it out :  
 
 https://spectacular-naiad-f03cbd.netlify.app/ 
