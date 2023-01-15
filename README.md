@@ -61,7 +61,7 @@ It fixed the problem immediately and even told me how to reference the styling f
 ![Screenshot (26)](https://user-images.githubusercontent.com/93249038/212460871-71411eb6-f546-4cfc-8d3c-45ee0e263958.png)
 
 
-# FULL HTML GENERATED CODE
+# Full HTML Generated Code
 
 
 <!DOCTYPE html>
