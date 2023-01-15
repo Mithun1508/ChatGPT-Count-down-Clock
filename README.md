@@ -1,4 +1,5 @@
-# Built a simple useful web Application — A countdown clock that a user can interact with. show you how to build a countdown timer in just one minute using ChatGPT!  
+# Built a simple useful web Application — A countdown clock that a user can interact with. 
+shows how to build a countdown timer in just one minute using ChatGPT!  
 
 
 #chatgpt #openai #HTML #CSS #JS: 
