@@ -141,9 +141,7 @@ This code creates a countdown clock that displays the remaining time in days, ho
 
 https://spectacular-naiad-f03cbd.netlify.app/ 
 
+![Screenshot (56)](https://user-images.githubusercontent.com/93249038/213609912-4e2ebf8a-a16d-4d22-b7e5-a991b08c216f.png)
 
-
-![Screenshot (20)](https://user-images.githubusercontent.com/93249038/212231152-e4464d76-f803-4141-bdd5-b006f8903c65.png)
-
-![Screenshot (21)](https://user-images.githubusercontent.com/93249038/212231171-0857abbd-ef67-42b5-b9b0-0d6dc5502f9a.png)
+![Screenshot (57)](https://user-images.githubusercontent.com/93249038/213609929-f3151c3d-a4c8-4955-8c88-37f9f55fc80a.png)
 
